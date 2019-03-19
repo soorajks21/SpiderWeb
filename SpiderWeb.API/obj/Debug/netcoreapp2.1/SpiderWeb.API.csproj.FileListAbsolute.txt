@@ -1,0 +1,28 @@
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.deps.json
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.runtimeconfig.json
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.runtimeconfig.dev.json
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.dll
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.pdb
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.csprojAssemblyReference.cache
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.csproj.CoreCompileInputs.cache
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.RazorAssemblyInfo.cache
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.RazorAssemblyInfo.cs
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.AssemblyInfoInputs.cache
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.AssemblyInfo.cs
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.RazorTargetAssemblyInfo.cache
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.dll
+C:\Users\soora\Documents\Sooraj\SocialApp\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.pdb
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.deps.json
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.runtimeconfig.json
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.runtimeconfig.dev.json
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.dll
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\bin\Debug\netcoreapp2.1\SpiderWeb.API.pdb
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.csprojAssemblyReference.cache
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.csproj.CoreCompileInputs.cache
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.RazorAssemblyInfo.cache
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.RazorAssemblyInfo.cs
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.AssemblyInfoInputs.cache
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.AssemblyInfo.cs
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.RazorTargetAssemblyInfo.cache
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.dll
+C:\Users\soora\Documents\Semester 5\SpiderWeb\SpiderWeb.API\obj\Debug\netcoreapp2.1\SpiderWeb.API.pdb
