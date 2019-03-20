@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SpiderWeb.API.Data;
+using SpiderWeb.API.Dtos;
 using SpiderWeb.API.Models;
 
 namespace SpiderWeb.API.Controllers
@@ -17,21 +18,21 @@ namespace SpiderWeb.API.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register(string username, string password)
+        public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
 
             
-            username = username.ToLower();
-            if(await _repo.UserExits(username))
+            userForRegisterDto.Username = userForRegisterDto.Username.ToLower();
+            if(await _repo.UserExits( userForRegisterDto.Username))
                 return BadRequest("Username already exists");
         
 
         var UserToCreate = new User
         {
-                Username = username
+                Username =  userForRegisterDto.Username
         };
 
-        var createUser = await _repo.Register(UserToCreate,password);
+        var createUser = await _repo.Register(UserToCreate, userForRegisterDto.Password);
         return StatusCode(201);
     }
 
