@@ -10,7 +10,8 @@
            "request": "attach",
            "processId": "${command:pickProcess}"
        },
-      
+
+     
         {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
