@@ -55,7 +55,7 @@ namespace SpiderWeb.API.Data
                 return user;
         }
 
-        private void createPasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+        private  void createPasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
           using (var hmac = new System.Security.Cryptography.HMACSHA512())
            { 
