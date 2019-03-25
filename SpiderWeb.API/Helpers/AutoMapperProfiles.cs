@@ -25,6 +25,8 @@ namespace SpiderWeb.API.Helpers
                 opt.ResolveUsing(d => d.DateOfBirth.CalculateAge());
             } );
               CreateMap<Photo, PhotosForDetailedDto>();
+
+              CreateMap<UserForUpdateDtos,User>();
         }
         
     }
