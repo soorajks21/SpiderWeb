@@ -21,6 +21,8 @@ export const appRoutes: Routes = [
 
     {path: 'members', component: MemberListComponent,
     resolve: {user: MemberListResolver}},
+    {path: 'planners', component: MemberListComponent,
+    resolve: {user: MemberListResolver}},
      {path: 'members/:id', component: MembersDetailComponent,
       resolve: {user: MemberDetailResolver}},
       {path: 'member/edit', component: MembersEditComponent, 
