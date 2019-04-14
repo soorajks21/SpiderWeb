@@ -27,6 +27,10 @@ namespace SpiderWeb.API.Helpers
               CreateMap<Photo, PhotosForDetailedDto>();
 
               CreateMap<UserForUpdateDtos,User>();
+
+              CreateMap<PhotoForCreationDto, Photo>();
+
+              CreateMap<UserForRegisterDto,User>();
         }
         
     }

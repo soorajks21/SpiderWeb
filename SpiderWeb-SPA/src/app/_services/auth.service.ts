@@ -4,6 +4,7 @@ import {map} from 'rxjs/operators';
 import { from } from 'rxjs';
 import {JwtHelperService} from '@auth0/angular-jwt';
 import { environment } from 'src/environments/environment';
+import { User } from '../_models/user';
 @Injectable({
   providedIn: 'root'
 })
@@ -29,8 +30,8 @@ login(model: any){
   );
 }
 
-register(model: any){
-  return this.http.post(this.baseUrl + 'register', model);
+register(user: User){
+  return this.http.post(this.baseUrl + 'register', user);
 }
 
 loggedIn(){

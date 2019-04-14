@@ -12,6 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 export class MemberListComponent implements OnInit {
 
   users: User[];
+  search_result : string;
   constructor(private userService: UserService, private alertify: AlertifyService,
     private route: ActivatedRoute) { }
 

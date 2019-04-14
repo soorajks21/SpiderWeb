@@ -18,6 +18,7 @@ galleryImages: NgxGalleryImage[];
 
  constructor(private userService: UserService, private alertify: AlertifyService,
    private route: ActivatedRoute ) { }
+   val : any;
 
   ngOnInit() {
     this.route.data.subscribe(data =>{
@@ -55,6 +56,7 @@ galleryImages: NgxGalleryImage[];
 
   Join(){
     this.alertify.message("Registerd in New event");
+   this.val = 'UnJoin';
   }
 
 

@@ -25,12 +25,12 @@
           </div>
           <div>
             <strong>Member Since:</strong>
-            <p>{{ user.created }}</p>
+            <p>{{ user.created | date:'mediumDate'}}</p>
           </div>
         </div>
         <div class="class-footer">
           <div class="btn-group d-flex">
-            <button class="btn btn-primary w-100" (click)="Join()">Like</button>
+            <button class="btn btn-primary w-100" (click)="Join()">Join</button>
             <button class="btn btn-success w-100">Message</button>
           </div>
         </div>
@@ -50,7 +50,7 @@
             <p>{{ user.intresets }}</p>
           </tab>
 
-          <tab heading="Photos">
+          <tab heading="Events">
             <ngx-gallery
               [options]="galleryOptions"
               [images]="galleryImages"

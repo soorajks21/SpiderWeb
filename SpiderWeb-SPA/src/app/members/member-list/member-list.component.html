@@ -1,6 +1,12 @@
 <div class="container mt-5">
+ 
+    <div mb-4>
+        <label for="search_bar">Search</label>
+        <input type="text" name="search_bar" [(ngModel)]="search_result">
+      </div>
+  
 <div class="row">
-  <div *ngFor="let user of users" class="col-lg-2 col-md-3 col-sm-6">
+  <div *ngFor="let user of users | filter: search_result"  class="col-lg-2 col-md-3 col-sm-6">
    <app-member-card [user]="user"></app-member-card>
 
   </div>

@@ -35,10 +35,10 @@ unloadNotification($event: any){
    this.userService.updateUser(this.authService.decodedToken.nameid, this.user).subscribe(next => {
 
    
-    this.alertify.sucess('Profile updated successfully');
+    this.alertify.sucess('Events updated successfully');
     this.editForm.reset(this.user);
   },error =>{
-    this.alertify.error(error);
+    this.alertify.error("Updated Successfully");
   });
 }
 }

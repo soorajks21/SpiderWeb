@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SpiderWeb.API.Data;
 using SpiderWeb.API.Dtos;
+using SpiderWeb.API.Helpers;
 
 namespace SpiderWeb.API.Controllers
 {
+  //  [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
@@ -36,7 +38,7 @@ namespace SpiderWeb.API.Controllers
         }
 
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name= "GetUser")]
         public async Task<IActionResult> GetUser(int id)
         {
             var user = await _repo.GetUser(id);
