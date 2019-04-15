@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using SpiderWeb.API.Helpers;
 using SpiderWeb.API.Models;
 
 namespace SpiderWeb.API.Data
@@ -13,7 +14,7 @@ namespace SpiderWeb.API.Data
 
          Task<bool> SaveAll();
 
-         Task<IEnumerable<User>> GetUsers();
+         Task<PageList<User>> GetUsers(UserParams UserParams);
 
          Task<User> GetUser(int id);
 
