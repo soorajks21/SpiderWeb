@@ -7,6 +7,7 @@ import { AuthService } from 'src/app/_services/auth.service';
 import { headersToString } from 'selenium-webdriver/http';
 import { UserService } from 'src/app/_services/user.service';
 import { AlertifyService } from 'src/app/_services/alertify.service';
+import { error } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-photo-edit',
@@ -61,6 +62,13 @@ export class PhotoEditComponent implements OnInit {
         };
 
         this.photos.push(photo);
+
+        if(photo.isMain){
+          this.authService.changeMemberPhoto(photo.url);
+          this.authService.currentUser.photoUrl = photo.url;
+          localStorage.setItem('user', JSON.stringify(this.authService.currentUser));
+
+        }
       }
     };
   }
@@ -79,4 +87,17 @@ export class PhotoEditComponent implements OnInit {
     
   }
 
+  deletePhoto(id: number){
+
+    this.alertify.confirm('Are you sure you want to delete this event?', () =>{
+
+      this.userService.deletePhoto(this.authService.decodedToken.nameid, id).subscribe(() =>{
+         this.photos.splice(this.photos.findIndex( p => id === id), 1);
+         this.alertify.sucess("Event has been deleted");
+      }, error => {
+        this.alertify.error("Failed to delete");
+      }
+      );
+    });
+  }
 }

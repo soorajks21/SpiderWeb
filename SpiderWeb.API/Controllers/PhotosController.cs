@@ -138,7 +138,49 @@ namespace SpiderWeb.API.Controllers
     [HttpDelete("{id}")]
 
     public async Task<IActionResult> DeletePhoto(int userId, int id){
+
+
+               if(userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
+            return Unauthorized();
+
+        var user = await _repo.GetUser(userId);
+    if(!user.Photos.Any(p => p.Id ==id))
+        return Unauthorized();
+
+       var photoFromRepo = await _repo.GetPhoto(id);
+
+
+       if(photoFromRepo.IsMain)
+           return BadRequest("You cannot delete main photo");
+
         
+       if(photoFromRepo.PublicID != null){
+           
+            var delParams = new DeletionParams(photoFromRepo.PublicID);
+
+        var result = _cloudinary.Destroy(delParams);
+
+        if(result.Result == "ok"){
+
+            _repo.Delete(photoFromRepo);
+        } 
+       }
+
+        if(photoFromRepo.PublicID == null)
+        {
+            _repo.Delete(photoFromRepo);
+        }
+       
+
+        if(await _repo.SaveAll())
+
+            return Ok();
+
+        return BadRequest("Failed to delete event");
+        
+
+
+
     }
     }
 }
